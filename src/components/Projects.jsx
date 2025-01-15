@@ -70,7 +70,7 @@ const Projects = () => {
           >
             {/* Text Section */}
             <div className="flex-1 lg:text-left">
-              <h3 className="text-2xl sm:text-4xl font-bold py-2 mb-4 bg-gradient-to-r from-blue-500 to-purple-800 text-transparent bg-clip-text">{project.title}</h3>
+              <h3 className="text-2xl sm:text-4xl font-bold py-2 mb-4 bg-gradient-to-r from-fuchsia-500 to-pink-500 bg-clip-text text-transparent">{project.title}</h3>
               <p className="text-gray-200 text-sm sm:text-base font-jost my-4">{project.description}</p>
               <div className="flex flex-wrap gap-2 mt-4 mb-4">
                 {project.tech.map((tech) => (

@@ -80,8 +80,8 @@ const Hero = () => {
           >
             {/* Name and Role */}
             <motion.div>
-              <h2 className="text-5xl lg:text-6xl font-jost mt-2 font-semibold">
-                Ronit Gupta
+              <h2 className="text-5xl lg:text-6xl font-jost mt-2 bg-gradient-to-r from-fuchsia-500 to-pink-500 bg-clip-text text-transparent font-semibold">
+                Ronit Gupta.
               </h2>
               <h3 className="text-xl font-jost mt-2 text-gray-400">
                 Full Stack Developer

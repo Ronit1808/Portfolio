@@ -12,6 +12,7 @@ import djangorest from '../assets/djangorest.png';
 import git from '../assets/git.png';
 import github from '../assets/github.png';
 import python from '../assets/python.png';
+import Tailwind2 from '../assets/Tailwind2.jpg';
 
 const Skills = () => {
   const tools = [
@@ -22,7 +23,7 @@ const Skills = () => {
     { name: 'Django', icon: Django },
     { name: 'PostgreSQL', icon: Postgres },
     { name: 'React', icon: react },
-    { name: 'TailwindCSS', icon: Tailwind },
+    { name: 'TailwindCSS', icon: Tailwind2 },
     { name: 'Django Rest Framework', icon: djangorest },
     { name: 'Python', icon: python },
     { name: 'Github', icon: github },
