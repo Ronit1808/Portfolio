@@ -7,27 +7,30 @@ const Contact = () => {
     {
       name: "GitHub",
       icon: <Github className="w-6 h-6 text-white" />,
-      url: "https://github.com/yourusername",
+      url: "https://github.com/Ronit1808",
     },
     {
       name: "LinkedIn",
       icon: <Linkedin className="w-6 h-6 text-blue-500" />,
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://www.linkedin.com/in/ronit-gupta-219003209/",
     },
     {
       name: "Instagram",
       icon: <Instagram className="w-6 h-6 text-pink-500" />,
-      url: "https://instagram.com/yourusername",
+      url: "https://www.instagram.com/roni18_08/",
     },
     {
       name: "Gmail",
       icon: <Mail className="w-6 h-6 text-red-500" />,
-      url: "mailto:yourname@gmail.com",
+      url: "mailto:ronit1808@gmail.com",
     },
   ];
 
   return (
-    <section id="contact" className="min-h-screen text-white py-20 px-4 sm:px-6 lg:px-8">
+    <section
+      id="contact"
+      className="min-h-screen text-white py-20 px-4 sm:px-6 lg:px-8"
+    >
       {/* Section Header */}
       <motion.div
         className="text-center mb-16"
@@ -37,10 +40,11 @@ const Contact = () => {
         transition={{ duration: 0.6 }}
       >
         <h2 className="text-4xl font-bold text-white mb-4">
-          Get in Touch
+          Contact me for collaboration
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto">
-          Have a question or want to work together? Drop me a message and I’ll get back to you as soon as possible.
+          Have a question or want to work together? Drop me a message, and I’ll
+          get back to you as soon as possible.
         </p>
       </motion.div>
 
@@ -55,9 +59,10 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="text-center lg:text-left">
-            <h3 className="text-2xl font-semibold mb-4">Contact me for collaboration</h3>
             <p className="text-gray-300">
-            Thank you for taking the time to check out my portfolio. Feel free to contact me if you're interested in hiring me or if you would like me to build a product for you.
+              Thank you for taking the time to check out my portfolio. Feel free
+              to contact me if you're interested in hiring me or if you'd like
+              me to build a product for you.
             </p>
           </div>
           <div className="flex gap-4">
@@ -79,7 +84,9 @@ const Contact = () => {
 
         {/* Contact Form */}
         <motion.form
-          className="bg-gray-800 p-8 rounded-lg shadow-lg space-y-6"
+          action="https://formspree.io/f/xqaajovr"
+          method="POST"
+          className="bg-gray-800 p-4 rounded-lg shadow-lg space-y-6"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -87,37 +94,49 @@ const Contact = () => {
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-400">
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-400"
+              >
                 Name
               </label>
               <input
                 type="text"
                 id="name"
                 name="name"
+                required
                 className="mt-2 p-3 w-full bg-gray-900 border border-gray-700 rounded-lg text-gray-300 focus:ring-blue-500 focus:border-blue-500"
                 placeholder="Your Name"
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-400">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-400"
+              >
                 Email
               </label>
               <input
                 type="email"
                 id="email"
                 name="email"
+                required
                 className="mt-2 p-3 w-full bg-gray-900 border border-gray-700 rounded-lg text-gray-300 focus:ring-blue-500 focus:border-blue-500"
                 placeholder="Your Email"
               />
             </div>
           </div>
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-400">
+            <label
+              htmlFor="message"
+              className="block text-sm font-medium text-gray-400"
+            >
               Message
             </label>
             <textarea
               id="message"
               name="message"
+              required
               rows="4"
               className="mt-2 p-3 w-full bg-gray-900 border border-gray-700 rounded-lg text-gray-300 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Your Message"

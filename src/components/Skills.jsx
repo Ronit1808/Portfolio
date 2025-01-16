@@ -7,25 +7,24 @@ import react from '../assets/reactjs.png';
 import Node from '../assets/nodejs.png';
 import Django from '../assets/django.png';
 import Postgres from '../assets/postgre.png';
-import Tailwind from '../assets/Tailwind.png';
 import djangorest from '../assets/djangorest.png';
 import git from '../assets/git.png';
 import github from '../assets/github.png';
 import python from '../assets/python.png';
-import Tailwind2 from '../assets/Tailwind2.jpg';
+import Tailwind3 from '../assets/Tailwind3.png';
 
 const Skills = () => {
   const tools = [
     { name: 'Html', icon: Html },
     { name: 'CSS', icon: Css },
     { name: 'JavaScript', icon: Js },
-    { name: 'NodeJS', icon: Node },
-    { name: 'Django', icon: Django },
-    { name: 'PostgreSQL', icon: Postgres },
     { name: 'React', icon: react },
-    { name: 'TailwindCSS', icon: Tailwind2 },
-    { name: 'Django Rest Framework', icon: djangorest },
+    { name: 'TailwindCSS', icon: Tailwind3 },
+    { name: 'NodeJS', icon: Node },
     { name: 'Python', icon: python },
+    { name: 'Django', icon: Django },
+    { name: 'Django Rest Framework', icon: djangorest },
+    { name: 'PostgreSQL', icon: Postgres },
     { name: 'Github', icon: github },
     { name: 'Git', icon: git },
   ];
@@ -55,7 +54,7 @@ const Skills = () => {
             >
               <div className="flex flex-col items-center gap-3">
                 {/* Icon */}
-                <img className="w-16 h-16 object-contain" src={tool.icon} alt={tool.name} />
+                <img className="w-16 h-16 object-contain bg-white" src={tool.icon} alt={tool.name} />
                 {/* Name */}
                 <h3 className="text-sm sm:text-xl font-semibold group-hover:text-blue-400 transition-colors">
                   {tool.name}

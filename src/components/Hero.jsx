@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Instagram , Linkedin, Mail, Download, Send } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail, Download, Send } from "lucide-react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
@@ -50,26 +50,31 @@ const Hero = () => {
                 wrapper="span"
                 speed={50}
                 repeat={Infinity}
-                className="bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text"
+                className="bg-gradient-to-l from-gray-400 to-gray-700 bg-clip-text text-transparent"
               />
             </h1>
-            <motion.div className="flex flex-wrap justify-center lg:justify-start gap-4" variants={itemVariants}>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-3 py-2 sm:px-6 sm:py-3 text-sm sm:text-base bg-blue-600 hover:bg-blue-700 rounded-lg flex items-center gap-2 transition-colors duration-300"
-              >
-                <Download className="w-5 h-5" />
-                Download CV
-              </motion.button>
+            <motion.div
+              className="flex flex-wrap justify-center lg:justify-start gap-4"
+              variants={itemVariants}
+            >
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-3 py-2 sm:px-6 sm:py-3 text-sm sm:text-base border border-blue-600 hover:bg-blue-600/10 rounded-lg flex items-center gap-2 transition-colors duration-300"
               >
-                <Send className="w-5 h-5" />
-                Contact Me
+                <Download className="w-5 h-5" />
+                Download CV
               </motion.button>
+              <a href="#contact">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-3 py-2 sm:px-6 sm:py-3 text-sm sm:text-base border border-blue-600 hover:bg-blue-600/10 rounded-lg flex items-center gap-2 transition-colors duration-300"
+                >
+                  <Send className="w-5 h-5" />
+                  Contact Me
+                </motion.button>
+              </a>
             </motion.div>
           </motion.div>
 
@@ -90,36 +95,51 @@ const Hero = () => {
 
             {/* Bio */}
             <p className="text-gray-300 font-jost max-w-lg text-center lg:text-left">
-            I am a passionate full stack developer with expertise in creating dynamic and responsive web applications. Skilled in modern frameworks like React for the frontend and Django for the backend, I specialize in building robust, scalable, and user-centric solutions. With hands-on experience in integrating APIs, managing databases, and optimizing performance, I enjoy transforming ideas into seamless digital experiences. My goal is to deliver efficient and innovative solutions that make an impact.
+              I am a passionate full stack developer with expertise in creating
+              dynamic and responsive web applications. Skilled in modern
+              frameworks like React for the frontend and Django for the
+              backend, I specialize in building robust, scalable, and
+              user-centric solutions. With hands-on experience in integrating
+              APIs, managing databases, and optimizing performance, I enjoy
+              transforming ideas into seamless digital experiences. My goal is
+              to deliver efficient and innovative solutions that make an impact.
             </p>
 
             {/* Social Links */}
             <div className="flex space-x-6">
-            <a
-                href="#"
+              <a
+                href="https://github.com/Ronit1808"
                 className="text-white hover:text-blue-400 transition-colors"
                 aria-label="GitHub Profile"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Github className="w-8 h-8" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/ronit-gupta-219003209/"
                 className="text-white hover:text-blue-400 transition-colors"
                 aria-label="LinkedIn Profile"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Linkedin className="w-8 h-8" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/roni18_08/"
                 className="text-white hover:text-blue-400 transition-colors"
                 aria-label="Instagram Profile"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Instagram className="w-8 h-8" />
               </a>
               <a
-                href="#"
+                href="mailto:ronit1808@gmail.com"
                 className="text-white hover:text-blue-400 transition-colors"
                 aria-label="Email Contact"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Mail className="w-8 h-8" />
               </a>

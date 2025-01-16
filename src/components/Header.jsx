@@ -14,7 +14,7 @@ const Header = () => {
         <div className="container mx-auto px-4 sm:px-14 flex justify-between items-center">
           {/* Logo */}
           <h1 className="text-3xl font-bold font-lobster tracking-wider text-white">
-            RG.
+            RG <span className='bg-gradient-to-r from-fuchsia-500 to-pink-500 bg-clip-text text-transparent'>.</span>
           </h1>
 
           {/* Hamburger Icon */}
@@ -52,7 +52,7 @@ const Header = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <nav className="hidden sm:flex space-x-6 font-jost">
+          <nav className="hidden sm:flex text-lg space-x-6 font-jost">
             <a href="#about" className=" hover:text-blue-400 transition-colors duration-200">
               About
             </a>
@@ -75,32 +75,32 @@ const Header = () => {
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="flex flex-col items-start justify-center h-full px-8 space-y-8 text-xl sm:text-2xl text-white">
+        <div className="flex flex-col items-start justify-center h-full px-8 space-y-8 text-lg sm:text-xl text-white">
           <a
             href="#about"
             onClick={toggleMenu}
-            className="hover:text-pink-600 transition-colors duration-200"
+            className= "hover:text-blue-400  transition-colors duration-200"
           >
             About
           </a>
           <a
             href="#skills"
             onClick={toggleMenu}
-            className="hover:text-pink-600 transition-colors duration-200"
+            className= "hover:text-blue-400  transition-colors duration-200"
           >
             Skills
           </a>
           <a
             href="#projects"
             onClick={toggleMenu}
-            className="hover:text-pink-600 transition-colors duration-200"
+            className= "hover:text-blue-400  transition-colors duration-200"
           >
             Projects
           </a>
           <a
             href="#contact"
             onClick={toggleMenu}
-            className="hover:text-pink-600 transition-colors duration-200"
+            className= "hover:text-blue-400  transition-colors duration-200"
           >
             Contact
           </a>
