@@ -26,7 +26,7 @@ const Hero = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       id="about"
-      className="min-h-screen text-white px-4 sm:px-16 pt-2 sm:pt-20"
+      className="min-h-screen text-white px-4 sm:px-16 sm:pt-16"
     >
       <div className="container mx-auto px-4 py-16">
         <motion.div
@@ -60,7 +60,7 @@ const Hero = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-3 py-2 sm:px-6 sm:py-3 text-sm sm:text-base border border-blue-600 hover:bg-blue-600/10 rounded-lg flex items-center gap-2 transition-colors duration-300"
+                className="px-3 py-3 sm:px-6 sm:py-3 text-sm sm:text-base border border-blue-600 hover:bg-blue-600/10 rounded-lg flex items-center gap-2 transition-colors duration-300"
               >
                 <Download className="w-5 h-5" />
                 Download CV
@@ -69,7 +69,7 @@ const Hero = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-3 py-2 sm:px-6 sm:py-3 text-sm sm:text-base border border-blue-600 hover:bg-blue-600/10 rounded-lg flex items-center gap-2 transition-colors duration-300"
+                  className="px-3 py-3 sm:px-6 sm:py-3 text-sm sm:text-base border border-blue-600 hover:bg-blue-600/10 rounded-lg flex items-center gap-2 transition-colors duration-300"
                 >
                   <Send className="w-5 h-5" />
                   Contact Me

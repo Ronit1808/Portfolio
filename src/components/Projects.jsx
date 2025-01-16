@@ -44,14 +44,14 @@ const Projects = () => {
       {/* Heading */}
       <div className="text-center mb-16">
         <motion.h1
-          className="text-4xl font-bold mb-4 text-white"
+          className="text-2xl sm:text-4xl font-bold mb-4 text-white"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           Projects
         </motion.h1>
-        <p className="text-gray-300 max-w-2xl mx-auto">
+        <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto">
           Explore some of the projects I’ve worked on, showcasing my full-stack development skills and problem-solving abilities.
         </p>
       </div>

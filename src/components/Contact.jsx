@@ -39,10 +39,10 @@ const Contact = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-4xl font-bold text-white mb-4">
+        <h2 className="text-2xl sm:text-4xl font-bold text-white mb-4">
           Contact me for collaboration
         </h2>
-        <p className="text-gray-300 max-w-2xl mx-auto">
+        <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto">
           Have a question or want to work together? Drop me a message, and I’ll
           get back to you as soon as possible.
         </p>
@@ -59,7 +59,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="text-center lg:text-left">
-            <p className="text-gray-300">
+            <p className="text-gray-300 text-base sm:text-lg ">
               Thank you for taking the time to check out my portfolio. Feel free
               to contact me if you're interested in hiring me or if you'd like
               me to build a product for you.

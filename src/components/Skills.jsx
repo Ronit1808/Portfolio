@@ -23,7 +23,7 @@ const Skills = () => {
     { name: 'NodeJS', icon: Node },
     { name: 'Python', icon: python },
     { name: 'Django', icon: django },
-    { name: 'Django Rest Framework', icon: djangorest },
+    { name: 'DRF', icon: djangorest },
     { name: 'PostgreSQL', icon: Postgres },
     { name: 'Github', icon: github },
     { name: 'Git', icon: git },
@@ -34,10 +34,10 @@ const Skills = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-12 text-center">
-          <h2 className="text-4xl font-bold mb-4 font-jost text-white">
+          <h2 className="text-2xl sm:text-4xl font-bold mb-4 font-jost text-white">
             Skills & Technologies
           </h2>
-          <p className="text-gray-300 text-lg font-jost max-w-2xl mx-auto">
+          <p className="text-gray-300 text-base sm:text-lg font-jost max-w-2xl mx-auto">
             A curated collection of tools and technologies I use to build engaging, functional, and scalable applications.
           </p>
         </div>
@@ -54,7 +54,7 @@ const Skills = () => {
             >
               <div className="flex flex-col items-center gap-3">
                 {/* Icon */}
-                <img className="w-16 h-16 object-contain bg-white" src={tool.icon} alt={tool.name} />
+                <img className="w-16 h-16 object-contain" src={tool.icon} alt={tool.name} />
                 {/* Name */}
                 <h3 className="text-sm sm:text-xl font-semibold group-hover:text-blue-400 transition-colors">
                   {tool.name}
