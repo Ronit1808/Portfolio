@@ -5,7 +5,7 @@ import Css from '../assets/css-3.png';
 import Js from '../assets/js.png';
 import react from '../assets/reactjs.png';
 import Node from '../assets/nodejs.png';
-import Django from '../assets/django.png';
+import django from '../assets/django.png';
 import Postgres from '../assets/postgre.png';
 import djangorest from '../assets/djangorest.png';
 import git from '../assets/git.png';
@@ -22,7 +22,7 @@ const Skills = () => {
     { name: 'TailwindCSS', icon: Tailwind3 },
     { name: 'NodeJS', icon: Node },
     { name: 'Python', icon: python },
-    { name: 'Django', icon: Django },
+    { name: 'Django', icon: django },
     { name: 'Django Rest Framework', icon: djangorest },
     { name: 'PostgreSQL', icon: Postgres },
     { name: 'Github', icon: github },
