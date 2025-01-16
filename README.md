@@ -9,7 +9,6 @@ This repository contains the code for my personal portfolio website. It showcase
 - **Responsive Design:** Built to look great on all devices.
 - **Modern UI:** Utilizes React and Tailwind CSS for a clean, modern interface.
 - **Smooth Animations:** Powered by Framer Motion for engaging user interactions.
-- **Custom Logo:** Features a unique RG monogram logo.
 - **Dynamic Contact Form:** Integrated with Formspree to allow visitors to send messages directly to my email.
 - **Social Media Links:** Directs users to my LinkedIn, GitHub, Instagram, and email.
 
@@ -57,7 +56,7 @@ To run this project locally:
 ---
 
 ## Live Link
- - [Portfolio](https://ronidev.vercel.app/)
+ - [roni.dev](https://ronidev.vercel.app/)
 
 ---
 
