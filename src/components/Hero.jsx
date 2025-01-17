@@ -54,17 +54,25 @@ const Hero = () => {
               />
             </h1>
             <motion.div
-              className="flex flex-wrap justify-center lg:justify-start gap-4"
+              className="flex flex-wrap justify-center pt-8 lg:justify-start gap-4"
               variants={itemVariants}
             >
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-3 py-3 sm:px-6 sm:py-3 text-sm sm:text-base border border-blue-600 hover:bg-blue-600/10 rounded-lg flex items-center gap-2 transition-colors duration-300"
+              <a
+                href="/RonitGupta-resume.pdf" 
+                download="RonitGupta-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Download className="w-5 h-5" />
-                Download CV
-              </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-3 py-3 sm:px-6 sm:py-3 text-sm sm:text-base border border-blue-600 hover:bg-blue-600/10 rounded-lg flex items-center gap-2 transition-colors duration-300"
+                >
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </motion.button>
+              </a>
+
               <a href="#contact">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
