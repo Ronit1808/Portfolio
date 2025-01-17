@@ -37,28 +37,31 @@ const Hero = () => {
         >
           {/* Left Column */}
           <motion.div variants={itemVariants} className="space-y-8">
-            <h1 className="text-4xl lg:text-5xl font-bold">
-              <TypeAnimation
-                sequence={[
-                  "Welcome to my workspace.",
-                  1000,
-                  "Where ideas come to life.",
-                  1000,
-                  "Where innovation meets design.",
-                  1000,
-                ]}
-                wrapper="span"
-                speed={50}
-                repeat={Infinity}
-                className="bg-gradient-to-l from-gray-400 to-gray-700 bg-clip-text text-transparent"
-              />
-            </h1>
+            <div className="h-24 flex items-center">
+              <h1 className="text-4xl lg:text-5xl font-bold">
+                <TypeAnimation
+                  sequence={[
+                    "Welcome to my workspace.",
+                    1000,
+                    "Where ideas come to life.",
+                    1000,
+                    "Where innovation meets design.",
+                    1000,
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  repeat={Infinity}
+                  className="bg-gradient-to-l from-gray-700 to-gray-400 bg-clip-text text-transparent"
+                />
+              </h1>
+            </div>
+
             <motion.div
               className="flex flex-wrap justify-center pt-8 lg:justify-start gap-4"
               variants={itemVariants}
             >
               <a
-                href="/RonitGupta-resume.pdf" 
+                href="/RonitGupta-resume.pdf"
                 download="RonitGupta-resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -66,7 +69,7 @@ const Hero = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-3 py-3 sm:px-6 sm:py-3 text-sm sm:text-base border border-blue-600 hover:bg-blue-600/10 rounded-lg flex items-center gap-2 transition-colors duration-300"
+                  className="px-3 py-3 sm:px-6 bg-gradient-to-r text-sm sm:text-base from-blue-500 to-purple-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl hover:opacity-90 transition duration-300 flex items-center gap-2"
                 >
                   <Download className="w-5 h-5" />
                   Download CV
@@ -77,7 +80,7 @@ const Hero = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-3 py-3 sm:px-6 sm:py-3 text-sm sm:text-base border border-blue-600 hover:bg-blue-600/10 rounded-lg flex items-center gap-2 transition-colors duration-300"
+                  className="px-3 py-3 sm:px-6 bg-gradient-to-r text-sm sm:text-base from-green-500 to-teal-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl hover:opacity-90 transition duration-300 flex items-center gap-2"
                 >
                   <Send className="w-5 h-5" />
                   Contact Me

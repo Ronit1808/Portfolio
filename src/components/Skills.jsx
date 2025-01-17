@@ -52,9 +52,13 @@ const Skills = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
             >
-              <div className="flex flex-col items-center gap-3">
+              <div className="flex flex-col items-center gap-3 group">
                 {/* Icon */}
-                <img className="w-16 h-16 object-contain" src={tool.icon} alt={tool.name} />
+                <img
+                  className="w-16 h-16 object-contain transition-transform duration-300 group-hover:scale-110 drop-shadow-[0_0_15px_rgba(59,130,246,0.7)]"
+                  src={tool.icon}
+                  alt={tool.name}
+                />
                 {/* Name */}
                 <h3 className="text-sm sm:text-xl font-semibold group-hover:text-blue-400 transition-colors">
                   {tool.name}

@@ -9,7 +9,7 @@ import Contact from './components/Contact'
 function App() {
 
   return (
-    <div className='flex flex-col bg-gradient-to-b from-gray-900 via-black to-gray-900 min-h-screen'>
+    <div className='flex flex-col overflow-x-hidden bg-gradient-to-b from-gray-900 via-black to-gray-900 min-h-screen'>
       <Header/>
       <Hero/>
       <Skills/>
