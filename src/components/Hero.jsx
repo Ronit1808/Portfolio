@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Instagram, Linkedin, Mail, Download, Send } from "lucide-react";
+import { Github, Linkedin, Mail, Download, Send } from "lucide-react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
@@ -61,8 +61,8 @@ const Hero = () => {
               variants={itemVariants}
             >
               <a
-                href="/RonitGupta-resume.pdf"
-                download="RonitGupta-resume.pdf"
+                href="/RonitGupta_Dev.pdf"
+                download="RonitGupta_Dev.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -108,7 +108,7 @@ const Hero = () => {
             <p className="text-gray-300 font-jost max-w-lg text-center lg:text-left">
               I am a passionate full stack developer with expertise in creating
               dynamic and responsive web applications. Skilled in modern
-              frameworks like React for the frontend and Django for the
+              frameworks like React.js and Next.js for the frontend and Django and express.js for the
               backend, I specialize in building robust, scalable, and
               user-centric solutions. With hands-on experience in integrating
               APIs, managing databases, and optimizing performance, I enjoy
@@ -135,15 +135,6 @@ const Hero = () => {
                 rel="noopener noreferrer"
               >
                 <Linkedin className="w-8 h-8" />
-              </a>
-              <a
-                href="https://www.instagram.com/roni18_08/"
-                className="text-white hover:text-blue-400 transition-colors"
-                aria-label="Instagram Profile"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Instagram className="w-8 h-8" />
               </a>
               <a
                 href="mailto:ronit1808@gmail.com"

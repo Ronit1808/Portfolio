@@ -15,11 +15,6 @@ const Contact = () => {
       url: "https://www.linkedin.com/in/ronit-gupta-219003209/",
     },
     {
-      name: "Instagram",
-      icon: <Instagram className="w-6 h-6 text-pink-500" />,
-      url: "https://www.instagram.com/roni18_08/",
-    },
-    {
       name: "Gmail",
       icon: <Mail className="w-6 h-6 text-red-500" />,
       url: "mailto:ronit1808@gmail.com",
