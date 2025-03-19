@@ -4,6 +4,7 @@ import { ExternalLink, Github } from "lucide-react";
 import wristlyimg from "../assets/Wristly-img.jpg";
 import getitimg from "../assets/Getit-img.jpg";
 import blogmagicimg from "../assets/Blogmagic-img.jpg";
+import resumecraft from "../assets/resumecraft.jpeg"
 
 const Projects = () => {
   const projects = [
@@ -20,7 +21,7 @@ const Projects = () => {
     {
       id: 2,
       title: "GETIT",
-      tech: ["React", "Tailwind", "Django", "Django RestFramework" ,"Razorpay API" , "Netlify" , "Render"],
+      tech: ["React", "Tailwind", "Django", "Django RestFramework" ,"Razorpay API" , "Render"],
       description:
         "E-Commerce Website for Gaming Accessories. This project is a full-stack e-commerce website where users can buy gaming accessories. The application provides a seamless shopping experience with a modern user interface and secure backend functionality.",
       image: getitimg,
@@ -30,12 +31,22 @@ const Projects = () => {
     {
       id: 3,
       title: "BlogMagic",
-      tech: ["React", "Django", "Django RestFramework" , "Google Gemini AI", "PostgreSQL" , "Netlify" , "Render"],
+      tech: ["React", "Django", "Django RestFramework" , "Google Gemini AI", "PostgreSQL" , "Render"],
       description:
         "BlogMagic is an AI-powered blogging application that simplifies the process of creating, editing, and managing blogs. The app leverages modern technologies and AI to enable users to craft engaging content effortlessly.",
       image: blogmagicimg,
       githubLink: "https://github.com/Ronit1808/BlogMagic",
       liveLink: "https://blogmagic.netlify.app/",
+    },
+    {
+      id: 4,
+      title: "ResumeCraft",
+      tech: ["HTML","CSS", "Javascript","React", "Netlify"],
+      description:
+      "ResumeCraft is a landing page for a product, developed using React for the front-end framework, styled with CSS for layout and design, and utilizing React Icons for visual elements.",
+      image: resumecraft,
+      githubLink: "https://github.com/Ronit1808/Resumecraft",
+      liveLink: "https://resumecraft1.netlify.app/",
     },
   ];
 
