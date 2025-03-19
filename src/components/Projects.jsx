@@ -4,7 +4,7 @@ import { ExternalLink, Github } from "lucide-react";
 import wristlyimg from "../assets/Wristly-img.jpg";
 import getitimg from "../assets/Getit-img.jpg";
 import blogmagicimg from "../assets/Blogmagic-img.jpg";
-import resumecraft from "../assets/resumecraft.jpeg"
+import resumecraft from "../assets/Resumecraft.jpeg"
 
 const Projects = () => {
   const projects = [
